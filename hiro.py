@@ -3,7 +3,8 @@ import time
 import datetime
 import safygiphy
 import asyncio
-
+import os
+import io
 
 
 g = safygiphy.Giphy ()

@@ -24,16 +24,15 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-
-    if message.content.lower().startswith("!lol"):
+    if message.content.lower().startswith("tl!staff"):
      embed1 =discord.Embed(
         title="Escolha seu Elo!",
         color=COR,
-        description="- Staff Evento = 🎉\n"
-                    "- Staff Registro  =  📝 \n"
-                    "- Staff Divulgação  =  📣 \n"
-                    "- Staff Designer  =  🎨 \n"
-                    "- Staff Organização  = 🎓",)
+        description="• Staff Evento = 🎉\n"
+                    "• Staff Registro  =  📝 \n"
+                    "• Staff Divulgação  =  📣 \n"
+                    "• Staff Designer  =  🎨 \n"
+                    "• Staff Organização  = 🎓",)
 
     botmsg = await client.send_message(message.channel, embed=embed1)
 

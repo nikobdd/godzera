@@ -26,7 +26,7 @@ async def on_ready():
 async def on_message(message):
     if message.content.lower().startswith("tl!staff"):
      embed1 =discord.Embed(
-        title="Escolha seu Elo!",
+        title="Teste Staff TL!",
         color=COR,
         description="• Staff Evento = 🎉\n"
                     "• Staff Registro  =  📝 \n"
@@ -34,7 +34,7 @@ async def on_message(message):
                     "• Staff Designer  =  🎨 \n"
                     "• Staff Organização  = 🎓",)
 
-    botmsg = await client.send_message(message.channel, embed=embed1)
+    await client.send_message(message.channel, embed=embed1)
 
     await client.add_reaction(botmsg, "🎉")
     await client.add_reaction(botmsg, "📝")

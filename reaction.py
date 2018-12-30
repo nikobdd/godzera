@@ -25,15 +25,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.lower().startswith("tl!staff"):
-     embed1 =discord.Embed(
-        title="Teste Staff TL!",
-        color=COR,
-        description="• Staff Evento = 🎉\n"
-                    "• Staff Registro  =  📝 \n"
-                    "• Staff Divulgação  =  📣 \n"
-                    "• Staff Designer  =  🎨 \n"
-                    "• Staff Organização  = 🎓",)
-
+    embed1 =discord.Embed(title="Teste Staff TL!",color=COR,description="• Staff Evento = 🎉\n• Staff Registro  =  📝 \n• Staff Divulgação  =  📣 \n• Staff Designer  =  🎨 \n• Staff Organização  = 🎓")
     botmsg = await client.send_message(message.channel, embed=embed1)
 
     await client.add_reaction(botmsg, "🎉")

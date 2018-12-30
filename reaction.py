@@ -3,7 +3,7 @@ import asyncio
 
 
 client = discord.Client ()
-COR =0x00e1e2
+COR =0xe9f700
 msg_id = None
 msg_user = None
 

@@ -24,7 +24,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-async def on_message(message):
     if message.content.lower().startswith("tl!staff"):
      embed1 =discord.Embed(
         title="Teste Staff TL!",

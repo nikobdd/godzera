@@ -1,6 +1,6 @@
 import discord
 import asyncio
-
+import os
 
 client = discord.Client ()
 COR =0xe9f700

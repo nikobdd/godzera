@@ -34,7 +34,7 @@ async def on_message(message):
                     "• Staff Designer  =  🎨 \n"
                     "• Staff Organização  = 🎓",)
 
-    await client.send_message(message.channel, embed=embed1)
+    botmsg = await client.send_message(message.channel, embed=embed1)
 
     await client.add_reaction(botmsg, "🎉")
     await client.add_reaction(botmsg, "📝")
